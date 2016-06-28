@@ -47,8 +47,21 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-
-                            TODOS
+                            <br>
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Codigo</th>
+                                        <th>Fecha</th> 
+                                        <th>Vendedor</th>
+                                        <th>Cliente</th>
+                                        <th>Vehiculo</th>
+                                        <th>Cancelar</th>
+                                    </tr>                               
+                                </thead>
+                                <tbody id="body">
+                                </tbody>
+                            </table>
 
                         </div>
                         <!-- /.col-lg-12 -->

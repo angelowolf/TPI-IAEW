@@ -2,8 +2,8 @@
 
 
     $('#select-pais').on('change', function () {
-        var id = this.val;       
-        $.get('http://localhost:8680/rest/aux/data/ciudades', {idPais: id}, function (response) {
+        var id = $('#select-pais').val();
+        $.get('http://localhost:8680/rest/aux/data/ciudades/' + id, null, function (response) {
             var $ciudad = $('#select-ciudad');
             $ciudad.find('option').remove().end().append('<option selected disabled>Seleccionar</option>');
             for (var i = 0; i < response.length; i++) {
@@ -21,15 +21,11 @@
             } else if ($('#fechaRetiro').val() === '') {
                 alert("Ingrese una fecha de retiro");
             } else {
-                var data = 'idCiudad' + $('#select-ciudad').find(":selected").val() + 'fecRet' + $('#fechaRetiro').val() + 'fecDev' + $('#fechaDevolucion').val();
+                var data = 'idCiudad=' + $('#select-ciudad').find(":selected").val() + '&fecRet=' + $('#fechaRetiro').val() + '&fecDev=' + $('#fechaDevolucion').val();
                 $.get('http://localhost:8680/rest/aux/data/vehiculos', data, function (response) {
                     $('#body').empty();
                     for (var i = 0; i < response.length; i++) {
-                        var $tr = $('<tr>').append(
-                                $('<td>').text(response.id),
-                                $('<td>').text(response.marca),
-                                $('<td>').text(response.modelo)
-                                );
+                        var $tr = $('<tr>').append('<td>' + response[i].id+ '</td>' + '<td>' + response[i].marca + '</td>' + '<td>' + response[i].modelo + '</td>');
                         $('#body').append($tr);
                     }
 

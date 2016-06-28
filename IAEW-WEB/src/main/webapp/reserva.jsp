@@ -128,7 +128,7 @@
                                     </select>
                                 </div>
 
-                                <button type="submit" id="boton-guardar" class="btn btn-success pull-right" disabled>Guardar</button>
+                                <button type="submit" id="boton-guardar" class="btn btn-success pull-right">Guardar</button>
                                 <button id="boton-buscar-vehiculo" class="btn btn-info pull-right">Buscar</button>
                             </form>
 
