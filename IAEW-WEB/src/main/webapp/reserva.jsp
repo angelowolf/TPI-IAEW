@@ -47,8 +47,21 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <br>
-                            <form class="form-inline">
+
+
+
+                            <form id="form-alta" class="col-md-8 col-md-offset-2">
+
+                                <div class="form-group">
+                                    <label for="sel1">Vendedor:</label>
+                                    <select class="form-control" id="select-vendedor" disabled>
+                                        <option selected disabled>Seleccionar</option>
+                                        <option value="1">caca</option>
+                                        <option value="2">cacdasdasa</option>
+                                        <option value="3">sdgffgs</option>
+                                        <option value="4">dfg</option>
+                                    </select>
+                                </div>                               
                                 <div class="form-group">
                                     <label for="sel1">Pais:</label>
                                     <select class="form-control" id="select-pais">
@@ -70,6 +83,33 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
+                                    <label for="sel1">Lugar Retiro:</label>
+                                    <select class="form-control" id="select-retiro" disabled>
+                                        <option selected disabled>Seleccionar</option>
+                                        <option value="1">caca</option>
+                                        <option value="2">cacdasdasa</option>
+                                        <option value="3">sdgffgs</option>
+                                        <option value="4">dfg</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sel1">Lugar Devolucion:</label>
+                                    <select class="form-control" id="select-devolucion" disabled>
+                                        <option selected disabled>Seleccionar</option>
+                                        <option value="1">caca</option>
+                                        <option value="2">cacdasdasa</option>
+                                        <option value="3">sdgffgs</option>
+                                        <option value="4">dfg</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Nombre">Nombre del Cliente</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Documento">Documento del Cliente</label>
+                                    <input type="number" min="0" class="form-control" id="documento" placeholder="Documento">
+                                </div> <div class="form-group">
                                     <label for="Devolucion">Fecha Devolucion</label>
                                     <input  class="form-control" id="fechaDevolucion"  placeholder="dd/mm/yyyy">
                                 </div>
@@ -77,20 +117,28 @@
                                     <label for="Retiro">Fecha Retiro</label>
                                     <input  class="form-control" id="fechaRetiro"  placeholder="dd/mm/yyyy">
                                 </div>
-                                <button type="submit" class="btn btn-default" id="boton-buscar-vehiculo">Buscar</button>
+                                <div class="form-group">
+                                    <label for="sel1">Vehiculo:</label>
+                                    <select class="form-control" id="select-vehiculo" disabled>
+                                        <option selected disabled>Seleccionar</option>
+                                        <option value="1">caca</option>
+                                        <option value="2">cacdasdasa</option>
+                                        <option value="3">sdgffgs</option>
+                                        <option value="4">dfg</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" id="boton-guardar" class="btn btn-success pull-right" disabled>Guardar</button>
+                                <button id="boton-buscar-vehiculo" class="btn btn-info pull-right">Buscar</button>
                             </form>
-                            <br>
-                            <table class="table table-striped table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Marca</th> 
-                                        <th>Modelo</th>
-                                    </tr>                               
-                                </thead>
-                                <tbody id="body">
-                                </tbody>
-                            </table>
+
+
+
+
+
+
+
+
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
@@ -105,6 +153,6 @@
         <script src="/../js/vendor/bootstrap.min.js" ></script>
         <script src="/../js/vendor/metisMenu.min.js" ></script>
         <script src="/../js/vendor/sb-admin-2.js" ></script>
-        <script src="/../js/autos.js" ></script>
+        <script src="/../js/reserva-alta.js" ></script>
     </body>
 </html>
