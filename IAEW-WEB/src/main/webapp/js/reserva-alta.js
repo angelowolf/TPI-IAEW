@@ -40,8 +40,6 @@
 
     $('#boton-guardar').click(function (e) {
         e.preventDefault();
-        window.location.replace('/todos_reservas.jsp');
-
         if ($('#fechaDevolucion').val() === '') {
             alert("Ingrese una fecha de devolucion");
         } else if ($('#fechaRetiro').val() === '') {
@@ -66,6 +64,7 @@
                         '&nomCliente=' + $('#nombre').val();
                 $.post('http://localhost:8680/rest/ops/reservas/crear', data, function (response) {
                     alert('Reserva registrada con exito!');
+                    window.location.replace('/todos_reservas.jsp');
                 }).fail(function () {
                     alert('Error al guardar reserva!');
                 });

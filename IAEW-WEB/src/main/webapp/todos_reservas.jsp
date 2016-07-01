@@ -53,9 +53,14 @@
                                     <tr>
                                         <th>Codigo</th>
                                         <th>Fecha</th> 
+                                        <th>Fecha Retiro</th> 
+                                        <th>Fecha Devolucion</th> 
+                                        <th>Fecha Cancelacion</th> 
+                                        <th>Costo</th> 
+                                        <th>Precio Final</th> 
                                         <th>Vendedor</th>
                                         <th>Cliente</th>
-                                        <th>Vehiculo</th>
+                                        <!--<th>Vehiculo</th>-->
                                         <th>Cancelar</th>
                                     </tr>                               
                                 </thead>

@@ -108,14 +108,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="Documento">Documento del Cliente</label>
-                                    <input type="number" min="0" class="form-control" id="documento" placeholder="Documento">
-                                </div> <div class="form-group">
-                                    <label for="Devolucion">Fecha Devolucion</label>
-                                    <input  class="form-control" id="fechaDevolucion"  placeholder="dd/mm/yyyy">
-                                </div>
+                                    <input class="form-control" id="documento" placeholder="Documento">
+                                </div> 
                                 <div class="form-group">
                                     <label for="Retiro">Fecha Retiro</label>
                                     <input  class="form-control" id="fechaRetiro"  placeholder="dd/mm/yyyy">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Devolucion">Fecha Devolucion</label>
+                                    <input  class="form-control" id="fechaDevolucion"  placeholder="dd/mm/yyyy">
                                 </div>
                                 <div class="form-group">
                                     <label for="sel1">Vehiculo:</label>
@@ -128,10 +129,33 @@
                                     </select>
                                 </div>
 
-                                <button type="submit" id="boton-guardar" class="btn btn-success pull-right">Guardar</button>
-                                <button id="boton-buscar-vehiculo" class="btn btn-info pull-right">Buscar</button>
-                            </form>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="form-group row">
+                                            <label for="sel1" class="control-label col-md-1">Vehiculo:</labe    l>
+                                                <div class="col-md-10">
+                                                    <select class="form-control" id="select-vehiculo" disabled>
+                                                        <option selected disabled>Seleccionar</option>
+                                                        <option value="1">caca</option>
+                                                        <option value="2">cacdasdasa</option>
+                                                        <option value="3">sdgffgs</option>
+                                                        <option value="4">dfg</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    <button id="boton-buscar-vehiculo" class="btn btn-info">Buscar</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
 
+
+                                <div class=" pull-left">
+                                    <button type="submit" id="boton-guardar" class="btn btn-success">Guardar</button>
+                                </div>
+
+                            </form>
 
 
 
