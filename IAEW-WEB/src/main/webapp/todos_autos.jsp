@@ -53,29 +53,31 @@
                                     <label for="sel1">Pais:</label>
                                     <select class="form-control" id="select-pais">
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
+                                        <!-- <option value="1">caca</option>
                                         <option value="2">cacdasdasa</option>
                                         <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
+                                        <option value="4">dfg</option> -->
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="sel1">Ciudad:</label>
                                     <select class="form-control" id="select-ciudad" disabled>
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
+                                        <!--<option value="1">caca</option>
                                         <option value="2">cacdasdasa</option>
                                         <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
+                                        <option value="4">dfg</option>-->
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="Devolucion">Fecha Devolucion</label>
-                                    <input  class="form-control" id="fechaDevolucion"  placeholder="dd/mm/yyyy">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Retiro">Fecha Retiro</label>
-                                    <input  class="form-control" id="fechaRetiro"  placeholder="dd/mm/yyyy">
+                                <div>
+                                    <div class="form-group">
+                                        <label for="Retiro">Fecha Retiro</label>
+                                        <input  class="form-control" id="fechaRetiro"  placeholder="dd/mm/yyyy">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Devolucion">Fecha Devolucion</label>
+                                        <input  class="form-control" id="fechaDevolucion"  placeholder="dd/mm/yyyy">
+                                    </div>                                    
                                 </div>
                                 <button type="submit" class="btn btn-default" id="boton-buscar-vehiculo">Buscar</button>
                             </form>
@@ -86,6 +88,12 @@
                                         <th>Id</th>
                                         <th>Marca</th> 
                                         <th>Modelo</th>
+                                        <th>Puertas</th>
+                                        <th>$/día</th>
+                                        <th>Puntaje</th>
+                                        <th>Transmisión</th>
+                                        <th>AC</th>
+                                        <th>Direccion</th>
                                     </tr>                               
                                 </thead>
                                 <tbody id="body">

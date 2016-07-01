@@ -24,8 +24,22 @@
                 var data = 'idCiudad=' + $('#select-ciudad').find(":selected").val() + '&fecRet=' + $('#fechaRetiro').val() + '&fecDev=' + $('#fechaDevolucion').val();
                 $.get('http://localhost:8680/rest/aux/data/vehiculos', data, function (response) {
                     $('#body').empty();
+                    
                     for (var i = 0; i < response.length; i++) {
-                        var $tr = $('<tr>').append('<td>' + response[i].id+ '</td>' + '<td>' + response[i].marca + '</td>' + '<td>' + response[i].modelo + '</td>');
+                        var acon = "No";
+                        if(response[i].tieneAireAcon) {
+                            acon = "Si";
+                        }
+                        var dir = "No";
+                        if(response[i].tieneDireccion) {
+                            dir = "Si";
+                        }                            
+                        var $tr = $('<tr>').append('<td>' + response[i].id+ '</td>' + '<td>' + response[i].marca + '</td>' 
+                                                 + '<td>' + response[i].modelo + '</td>' + '<td>' + response[i].cantidadPuertas 
+                                                 + '</td>' + '<td>' + response[i].precioPorDia + '</td>' 
+                                                 + '<td>' + response[i].puntaje + '</td>' + '<td>' + response[i].tipoCambio + '</td>' 
+                                                 + '<td>' + acon + '</td>' + '<td>' + dir + '</td>'
+                                                 + '</tr>');
                         $('#body').append($tr);
                     }
 
