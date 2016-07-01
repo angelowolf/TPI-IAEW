@@ -21,7 +21,7 @@
                     '</td>' + '<td>' + response[i].fechaHoraDevolucion +
                     '</td>' + '<td>' + response[i].fechaCancelacion +
                     '</td>' + '<td>' + response[i].costo +
-                    '</td>' + '<td>' + response[i].totalReserva +
+                    '</td>' + '<td>' + response[i].precioFinal +
                     '</td>' + '<td>' + response[i].vendedor.nombre +
                     '</td>' + '<td>' + response[i].cliente.nombre +
                     //'</td>' + '<td>' + response[i].vehiculo.marca + ' ' + response[i].vehiculo.modelo +

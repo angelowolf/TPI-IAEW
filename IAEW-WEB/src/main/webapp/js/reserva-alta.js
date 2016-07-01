@@ -54,20 +54,25 @@
             alert("Ingrese un numero de documento del cliente");
         } else if ($('#select-vehiculo').find(":selected").val() > 0) {
             if ($('#select-vendedor').find(":selected").val() > 0) {
-                var data = 'idVend=' + $('#select-vendedor').find(":selected").val() +
-                        '&idVehCiu=' + $('#select-vehiculo').find(":selected").val() +
-                        '&lugDev=' + $('#select-devolucion').find(":selected").val() +
-                        '&lugRet=' + $('#select-retiro').find(":selected").val() +
-                        '&docCliente=' + $('#documento').val() +
-                        '&fecDevol=' + $('#fechaDevolucion').val() +
-                        '&fecRet=' + $('#fechaRetiro').val() +
-                        '&nomCliente=' + $('#nombre').val();
-                $.post('http://localhost:8680/rest/ops/reservas/crear', data, function (response) {
-                    alert('Reserva registrada con exito!');
-                    window.location.replace('/todos_reservas.jsp');
-                }).fail(function () {
-                    alert('Error al guardar reserva!');
-                });
+                if ($('#select-ciudad').find(":selected").val() > 0) {
+                    var data = 'idVend=' + $('#select-vendedor').find(":selected").val() +
+                            '&idVehCiu=' + $('#select-vehiculo').find(":selected").val() +
+                            '&lugDev=' + $('#select-devolucion').find(":selected").val() +
+                            '&lugRet=' + $('#select-retiro').find(":selected").val() +
+                            '&docCliente=' + $('#documento').val() +
+                            '&fecDevol=' + $('#fechaDevolucion').val() +
+                            '&fecRet=' + $('#fechaRetiro').val() +
+                            '&idCiudad=' + $('#select-ciudad').find(":selected").val() +
+                            '&nomCliente=' + $('#nombre').val();
+                    $.post('http://localhost:8680/rest/ops/reservas/crear', data, function (response) {
+                        alert('Reserva registrada con exito!');
+                        window.location.replace('/todos_reservas.jsp');
+                    }).fail(function () {
+                        alert('Error al guardar reserva!');
+                    });
+                } else {
+                    alert("Seleccione una Ciudad!");
+                }
             } else {
                 alert("Seleccione un vendedor!");
             }
