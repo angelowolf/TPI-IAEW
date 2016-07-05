@@ -3,7 +3,7 @@
 
     $('#select-pais').on('change', function () {
         var id = $('#select-pais').val();
-        $.get('http://localhost:8680/rest/aux/data/ciudades/' + id, null, function (response) {
+        $.get('http://localhost:8080/tpi-heroku/rest/aux/data/ciudades/' + id, null, function (response) {
             var $ciudad = $('#select-ciudad');
             $ciudad.find('option').remove().end().append('<option selected disabled>Seleccionar</option>');
             for (var i = 0; i < response.length; i++) {
@@ -22,7 +22,7 @@
                 alert("Ingrese una fecha de retiro");
             } else {
                 var data = 'idCiudad=' + $('#select-ciudad').find(":selected").val() + '&fecRet=' + $('#fechaRetiro').val() + '&fecDev=' + $('#fechaDevolucion').val();
-                $.get('http://localhost:8680/rest/aux/data/vehiculos', data, function (response) {
+                $.get('http://localhost:8080/tpi-heroku/rest/aux/data/vehiculos', data, function (response) {
                     $('#body').empty();
                     
                     for (var i = 0; i < response.length; i++) {
@@ -52,7 +52,7 @@
         }
     });
 
-    $.get('http://localhost:8680/rest/aux/data/paises', null, function (response) {
+    $.get('http://localhost:8080/tpi-heroku/rest/aux/data/paises', null, function (response) {
         var $pais = $('#select-pais');
         $pais.find('option').remove().end().append('<option selected disabled>Seleccionar</option>');
         for (var i = 0; i < response.length; i++) {

@@ -4,14 +4,14 @@
     $('button').click(function (e) {
         e.preventDefault();
         var id = $(this).data('id');
-        $.put('http://localhost:8680/rest/ops/reservas/cancelar/' + id, null, function (response) {
+        $.post('http://localhost:8080/tpi-heroku/rest/ops/reservas/cancelar/' + id, null, function (response) {
             console.log('Reserva Cancelada');
         }).fail(function () {
             alert('Error al buscar vehiculos!');
         });
     });
 
-    $.get('http://localhost:8680/rest/ops/reservas/listado', null, function (response) {
+    $.get('http://localhost:8080/tpi-heroku/rest/ops/reservas/listado', null, function (response) {
         $('#body').empty();
         for (var i = 0; i < response.length; i++) {
            

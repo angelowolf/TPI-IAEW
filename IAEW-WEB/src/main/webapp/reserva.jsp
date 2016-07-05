@@ -56,50 +56,30 @@
                                     <label for="sel1">Vendedor:</label>
                                     <select class="form-control" id="select-vendedor" disabled>
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
-                                        <option value="2">cacdasdasa</option>
-                                        <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
                                     </select>
                                 </div>                               
                                 <div class="form-group">
                                     <label for="sel1">Pais:</label>
                                     <select class="form-control" id="select-pais">
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
-                                        <option value="2">cacdasdasa</option>
-                                        <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="sel1">Ciudad:</label>
                                     <select class="form-control" id="select-ciudad" disabled>
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
-                                        <option value="2">cacdasdasa</option>
-                                        <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="sel1">Lugar Retiro:</label>
                                     <select class="form-control" id="select-retiro" disabled>
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
-                                        <option value="2">cacdasdasa</option>
-                                        <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="sel1">Lugar Devolucion:</label>
                                     <select class="form-control" id="select-devolucion" disabled>
                                         <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
-                                        <option value="2">cacdasdasa</option>
-                                        <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -112,34 +92,20 @@
                                 </div> 
                                 <div class="form-group">
                                     <label for="Retiro">Fecha Retiro</label>
-                                    <input  class="form-control" id="fechaRetiro"  placeholder="dd/mm/yyyy">
+                                    <input  class="form-control" id="fechaRetiro"  placeholder="dd/MM/yyyy">
                                 </div>
                                 <div class="form-group">
                                     <label for="Devolucion">Fecha Devolucion</label>
-                                    <input  class="form-control" id="fechaDevolucion"  placeholder="dd/mm/yyyy">
-                                </div>
-                                <div class="form-group">
-                                    <label for="sel1">Vehiculo:</label>
-                                    <select class="form-control" id="select-vehiculo" disabled>
-                                        <option selected disabled>Seleccionar</option>
-                                        <option value="1">caca</option>
-                                        <option value="2">cacdasdasa</option>
-                                        <option value="3">sdgffgs</option>
-                                        <option value="4">dfg</option>
-                                    </select>
-                                </div>
+                                    <input  class="form-control" id="fechaDevolucion"  placeholder="dd/MM/yyyy">
+                                </div>                                
 
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="form-group row">
-                                            <label for="sel1" class="control-label col-md-1">Vehiculo:</labe    l>
+                                            <label for="sel1" class="control-label col-md-1">Vehiculo:</label>
                                                 <div class="col-md-10">
                                                     <select class="form-control" id="select-vehiculo" disabled>
-                                                        <option selected disabled>Seleccionar</option>
-                                                        <option value="1">caca</option>
-                                                        <option value="2">cacdasdasa</option>
-                                                        <option value="3">sdgffgs</option>
-                                                        <option value="4">dfg</option>
+                                                        <option selected disabled>Seleccionar</option>              
                                                     </select>
                                                 </div>
                                                 <div class="col-md-1">
