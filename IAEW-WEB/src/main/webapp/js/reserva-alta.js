@@ -64,9 +64,10 @@
                             '&lugRet=' + $('#select-retiro').find(":selected").val() +
                             '&idVend=' + $('#select-vendedor').find(":selected").val() + 
                             '&idCiudad=' + $('#select-ciudad').find(":selected").val();
-                    $.ajax({
+                    console.log("data = " + data);
+                    /*$.ajax({
                        url: 'http://localhost:8080/tpi-heroku/rest/ops/reservas/crear', 
-                       type: 'GET', 
+                       type: 'PUT', 
                        data: data,
                        success: function (response) {
                             alert('Reserva registrada con exito!');
@@ -75,13 +76,13 @@
                        error: function () {
                          alert('Error al guardar reserva!');
                        }
-                    });
-                    /*$.put('http://localhost:8080/tpi-heroku/rest/ops/reservas/crear', data, function (response) {
+                    });*/
+                    $.get('http://localhost:8080/tpi-heroku/rest/ops/reservas/crear', data, function (response) {
                         alert('Reserva registrada con exito!');
                         window.location.replace('/todos_reservas.jsp');
                     }).fail(function () {
                         alert('Error al guardar reserva!');
-                    });*/
+                    });
                 } else {
                     alert("Seleccione una Ciudad!");
                 }

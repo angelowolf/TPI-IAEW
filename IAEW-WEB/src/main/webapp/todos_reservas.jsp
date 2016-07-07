@@ -83,6 +83,22 @@
         <script src="/../js/vendor/metisMenu.min.js" ></script>
         <script src="/../js/vendor/sb-admin-2.js" ></script>
         <script src="/../js/reservas.js" ></script>
+        <script> 
+            function cancelarReserva(codRes){ 
+                console.log("entro a boton con " + codRes);
+                $.ajax({
+                    url: 'http://localhost:8080/tpi-heroku/rest/ops/reservas/cancelar/' + codRes, 
+                    type: 'PUT',            
+                    success: function (response) {
+                         alert('Reserva cancelada con exito!');
+                         window.location.replace('/todos_reservas.jsp');
+                    }, 
+                    error: function () {
+                      alert('Error al cancelar reserva!');
+                    }
+                 });
+            }
+        </script>
     </body>
     <jsp:include page="/modal_eliminar.jsp"/>
     <jsp:include page="/modal_ver.jsp"/>

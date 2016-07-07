@@ -102,15 +102,16 @@
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="form-group row">
-                                            <label for="sel1" class="control-label col-md-1">Vehiculo:</label>
-                                                <div class="col-md-10">
-                                                    <select class="form-control" id="select-vehiculo" disabled>
-                                                        <option selected disabled>Seleccionar</option>              
-                                                    </select>
-                                                </div>
-                                                <div class="col-md-1">
-                                                    <button id="boton-buscar-vehiculo" class="btn btn-info">Buscar</button>
-                                                </div>
+                                            <div class="col-md-1">
+                                                <button id="boton-buscar-vehiculo" class="btn btn-info">Buscar</button>
+                                            </div>
+                                            <label for="sel1" class="control-label col-md-1">Vehiculo:</label>                                                
+                                            <div class="col-md-10">
+                                                <select class="form-control" id="select-vehiculo" disabled>
+                                                    <option selected disabled>Seleccionar</option>              
+                                                </select>
+                                            </div>
+                                                
                                         </div>
                                     </div>
                                 </div>
